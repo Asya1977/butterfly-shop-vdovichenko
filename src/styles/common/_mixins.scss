@@ -1,0 +1,17 @@
+@mixin inner {
+    width: 1278px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+@mixin button {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: underline;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: $color-light;
+}

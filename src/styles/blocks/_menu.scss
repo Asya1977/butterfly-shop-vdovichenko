@@ -1,0 +1,30 @@
+.menu {
+    ul {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        margin: 0 30px;
+        list-style: none;
+        text-align: center;
+    }
+    li:first-child {
+        padding: 33px;
+        background-color: $color-light;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+li:first-child {
+    padding: 33px;
+    background-color: $color-light;
+}

@@ -1,0 +1,23 @@
+.footer {
+    padding: 31px 0;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+    background-color: #333333;
+}
+
+.footer-inner {
+    width: 1278px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.footer-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: auto;
+    padding: 31px 0;
+}

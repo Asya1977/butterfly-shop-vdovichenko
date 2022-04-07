@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: $font;
+    padding-top: 75px;
+    font-family: $font-open;
+    color: $color-light;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }

@@ -1,0 +1,45 @@
+            .form {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-basis: 100%;
+            }
+
+            .form-field-part {
+                flex-basis: 33.33%;
+                padding: 10px;
+                text-align: left;
+            }
+
+            .form-label {
+                padding: 8px;
+                font-size: 20px;
+                line-height: 27px;
+                text-align: start;
+            }
+
+            .form-input,
+            .form-textarea {
+                width: 100%;
+                padding: 35px;
+                font-size: 28px;
+                line-height: 34px;
+                border-radius: 6px;
+                border: none;
+                background: #FFFFFF;
+            }
+
+            .btn {
+                display: inline-block;
+                width: 100%;
+                padding: 35px;
+                margin-top: 27px;
+                font-size: 28px;
+                line-height: 34px;
+                text-align: center;
+                border-radius: 6px;
+                border: none;
+                color: #FFFFFF;
+                background-color: $color-light
+            }
