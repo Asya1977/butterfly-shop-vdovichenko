@@ -20,7 +20,8 @@
 
 .portfolio-photo {
     display: flex;
-    flex-wrap: wrap;
+    min-width: 100%;
+    // flex-wrap: wrap;
     flex-direction: row;
     margin-left: -10px;
     margin-right: -10px;
@@ -33,8 +34,9 @@
 .portfolio-pic-desc {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 10px;
+    right: 10px;
+    // width: 100%;
     padding: 15px;
     font-weight: 400;
     font-size: 24px;

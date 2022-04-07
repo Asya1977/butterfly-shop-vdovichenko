@@ -8,11 +8,12 @@
     li {
         display: inline-block;
         margin: 0 30px;
+        padding: 33px;
         list-style: none;
         text-align: center;
     }
     li:first-child {
-        padding: 33px;
+        // padding: 33px;
         background-color: $color-light;
     }
     a {
@@ -22,9 +23,4 @@
             text-decoration: underline;
         }
     }
-}
-
-li:first-child {
-    padding: 33px;
-    background-color: $color-light;
 }
