@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
 }
 
 body {
-    padding-top: 75px;
+    padding-top: 85px;
     font-family: $font-open;
     color: $color-light;
 }

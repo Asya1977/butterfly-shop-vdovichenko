@@ -1,26 +1,47 @@
 .menu {
+    @media (max-width: $mobile-max) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        max-width: 100%;
+        padding: 20px;
+        background: #333333;
+        border-top: 1px solid $color-light;
+    }
     ul {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 24px;
-        text-align: center;
+        display: flex;
+        list-style: none;
+        @media (max-width: $mobile-max) {
+            display: block;
+            text-align: center;
+        }
     }
     li {
-        display: inline-block;
-        margin: 0 30px;
+        margin: 0 15px;
         padding: 33px;
         list-style: none;
         text-align: center;
+        @media (max-width: $mobile-max) {
+            margin: 20px 15px;
+        }
     }
     li:first-child {
         // padding: 33px;
         background-color: $color-light;
     }
     a {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
         color: #fff;
         text-decoration: none;
         &:hover {
             text-decoration: underline;
+        }
+        @media (max-width: $mobile-max) {
+            font-size: 20px;
+            line-height: 27px;
         }
     }
 }

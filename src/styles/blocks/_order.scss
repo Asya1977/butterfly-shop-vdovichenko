@@ -4,10 +4,17 @@
     color: #333333;
     background: rgb(51, 51, 51, 0.1);
     text-align: center;
+    @media (max-width: $tablet-max) {
+        padding: 120px 0;
+    }
+    @media (max-width: $mobile-max) {
+        padding: 90px 0;
+    }
 }
 
 .order-inner {
-    width: 1278px;
+    max-width: 1278px + $gap;
+    padding: 0 $gap-half;
     margin: 0 auto;
     border: 1px solid red;
 }
@@ -16,10 +23,26 @@
     font-size: 64px;
     line-height: 87px;
     margin-bottom: 37px;
+    @media (max-width: $tablet-max) {
+        font-size: 60px;
+        line-height: 82px;
+    }
+    @media (max-width: $mobile-max) {
+        font-size: 36px;
+        line-height: 49px;
+    }
 }
 
 .order-text {
     font-size: 28px;
     line-height: 38px;
     margin-bottom: 90px;
+    @media (max-width: $tablet-max) {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    @media (max-width: $mobile-max) {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }

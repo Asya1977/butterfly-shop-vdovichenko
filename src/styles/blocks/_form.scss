@@ -1,45 +1,61 @@
-            .form {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: space-between;
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-basis: 66.66%;
+            margin-top: 90px;
+            //     // @media (max-width: $tablet-max) {
+            //     //     position: relative;
+            // }
+            // @media (max-width: $mobile-max) {
+            //     display: block;
+            //     margin-top: 60px;
+            // }
+        }
+
+        .form-field-part {
+            flex-basis: 33.33%;
+            padding: 10px;
+            text-align: left;
+            @media (max-width: $tablet-max) {
+                flex-basis: 50%;
+            }
+            @media (max-width: $mobile-max) {
+                // display: inline-block;
+                // margin-bottom: 30px;
                 flex-basis: 100%;
             }
+        }
 
-            .form-field-part {
-                flex-basis: 33.33%;
-                padding: 10px;
-                text-align: left;
-            }
+        .form-label {
+            padding: 8px;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: start;
+        }
 
-            .form-label {
-                padding: 8px;
-                font-size: 20px;
-                line-height: 27px;
-                text-align: start;
-            }
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 35px;
+            font-size: 28px;
+            line-height: 34px;
+            border-radius: 6px;
+            border: none;
+            background: #FFFFFF;
+        }
 
-            .form-input,
-            .form-textarea {
-                width: 100%;
-                padding: 35px;
-                font-size: 28px;
-                line-height: 34px;
-                border-radius: 6px;
-                border: none;
-                background: #FFFFFF;
+        .btn {
+            @include button;
+            padding: 35px 140px;
+            margin-top: 27px;
+            font-size: 28px;
+            line-height: 34px;
+            @media (max-width: $tablet-max) {
+                padding: 35px 328px;
             }
-
-            .btn {
-                display: inline-block;
-                width: 100%;
-                padding: 35px;
-                margin-top: 27px;
-                font-size: 28px;
-                line-height: 34px;
-                text-align: center;
-                border-radius: 6px;
-                border: none;
-                color: #FFFFFF;
-                background-color: $color-light
+            @media (max-width: $mobile-max) {
+                padding: 35px 110px;
             }
+        }

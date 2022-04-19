@@ -1,66 +1,96 @@
-.portfolio {
-    padding: 130px 0;
-    background-color: #E5E5E5;
-    text-align: center;
-}
+    .portfolio {
+        padding: 130px 0;
+        background-color: #E5E5E5;
+        text-align: center;
+        @media (max-width: $tablet-max) {
+            padding: 120px 0;
+        }
+        @media (max-width: $mobile-max) {
+            padding: 90px 0;
+            text-align: center;
+        }
+    }
 
-.portfolio-inner {
-    width: 1278px;
-    margin: 0 auto;
-    border: 1px solid red;
-}
+    .portfolio-inner {
+        @include inner;
+        // @media (max-width: $tablet-max) {
+        //     padding: 120px 0;
+        // }
+        // @media (max-width: $mobile-max) {
+        //     padding: 90px 0;
+        //     text-align: center;
+        // }
+    }
 
-.portfolio-text {
-    margin-bottom: 120px;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 87px;
-    color: #333333;
-}
+    .portfolio-text {
+        margin-bottom: 120px;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 87px;
+        color: #333333;
+        @media (max-width: $tablet-max) {
+            font-size: 60px;
+            line-height: 82px;
+        }
+        @media (max-width: $mobile-max) {
+            font-size: 36px;
+            line-height: 49px;
+        }
+    }
 
-.portfolio-photo {
-    display: flex;
-    min-width: 100%;
-    // flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -10px;
-    margin-right: -10px;
-}
+    .portfolio-photo {
+        display: flex;
+        min-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 95px;
+        margin-left: -10px;
+        margin-right: -10px;
+        @media (max-width: $tablet-max) {
+            justify-content: center;
+            margin-top: 50px;
+            padding: 0 $gap-half;
+        }
+        @media (max-width: $mobile-max) {
+            display: block;
+            // margin-left: 10px;
+            // margin-right: 10px;
+        }
+    }
 
-.portfolio-figure {
-    position: relative;
-}
+    .portfolio-figure {
+        position: relative;
+        @media (max-width: $tablet-max) {
+            width: 50%;
+        }
+        @media (max-width: $mobile-max) {
+            min-width: 100%;
+        }
+    }
 
-.portfolio-pic-desc {
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    // width: 100%;
-    padding: 15px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    color: #FFFFFF;
-    background: rgba(0, 0, 0, 0.4);
-}
+    .portfolio-pic-desc {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+        // width: 100%;
+        padding: 15px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: #FFFFFF;
+        background: rgba(0, 0, 0, 0.4);
+    }
 
-.portfolio-pic {
-    padding: 10px;
-}
+    .portfolio-pic {
+        min-width: 100%;
+        padding: 10px;
+    }
 
-.portfolio-btutton {
-    display: inline-block;
-    font-size: 42px;
-    line-height: 57px;
-    margin-top: 120px;
-    padding: 30px 40px;
-    border: 1px solid #fff;
-    border-radius: 6px;
-    text-align: center;
-    text-decoration: none;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    background-color: $color-light;
-}
+    .portfolio-button {
+        @include button;
+        font-size: 42px;
+        line-height: 57px;
+        margin-top: 120px;
+        padding: 30px 40px;
+    }

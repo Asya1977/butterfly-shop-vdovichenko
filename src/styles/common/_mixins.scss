@@ -1,17 +1,17 @@
 @mixin inner {
-    width: 1278px;
+    max-width: 1278px + $gap;
+    padding: 0 $gap-half;
     margin: 0 auto;
     border: 1px solid red;
 }
 
 @mixin button {
     display: inline-block;
-    border: 1px solid #fff;
+    font-weight: 400;
     border-radius: 6px;
-    text-align: center;
-    text-decoration: underline;
     align-items: center;
     text-align: center;
+    text-decoration: none;
     color: #fff;
     background-color: $color-light;
 }

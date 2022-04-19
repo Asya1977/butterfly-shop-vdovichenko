@@ -1,33 +1,40 @@
-    .social-icons {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: -15px;
-    }
+            .social-icons {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-right: -15px;
+                @media (max-width: $mobile-max) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
 
-    .social-tel {
-        font-size: 28px;
-        line-height: 38px;
-        color: #FFFFFF;
-        margin-right: 60px;
-        text-decoration: none;
-    }
+            .social-tel {
+                font-size: 28px;
+                line-height: 38px;
+                color: #FFFFFF;
+                margin-right: 60px;
+                text-decoration: none;
+                @media (max-width: $mobile-max) {
+                    margin: 0 47px 15px;
+                }
+            }
 
-    .social {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
+            .social {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
 
-    .social-item {
-        margin-right: 15px;
-    }
+            .social-item {
+                margin-right: 15px;
+            }
 
-    .social-link {
-        display: block;
-        width: 26px;
-        height: 26px;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+            .social-link {
+                display: block;
+                width: 26px;
+                height: 26px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
